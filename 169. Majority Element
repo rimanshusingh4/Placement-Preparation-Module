@@ -1,0 +1,7 @@
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        sort(nums.begin(), nums.end());  // Sort the vector in non-decreasing order
+        return nums[nums.size() / 2];  // Return the element at the middle index
+    }
+};
